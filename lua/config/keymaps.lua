@@ -9,3 +9,7 @@ vim.keymap.set("n", "<C-b>", "<C-b>zz")
 -- Cycle tabs with Ctrl+PageUp/PageDown
 vim.keymap.set("n", "<C-PageDown>", ":tabnext<CR>", { desc = "Next Tab" })
 vim.keymap.set("n", "<C-PageUp>", ":tabprevious<CR>", { desc = "Previous Tab" })
+
+-- Escape terminal
+-- Better terminal escape key
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
