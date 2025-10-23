@@ -11,5 +11,7 @@ vim.keymap.set("n", "<C-PageDown>", ":tabnext<CR>", { desc = "Next Tab" })
 vim.keymap.set("n", "<C-PageUp>", ":tabprevious<CR>", { desc = "Previous Tab" })
 
 -- Escape terminal
--- Better terminal escape key
 vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
+
+-- Starter screen
+vim.keymap.set("n", "<leader>uS", require("mini.starter").open, { desc = "Open mini starter" })
