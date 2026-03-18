@@ -15,3 +15,7 @@ vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 
 -- Starter screen
 vim.keymap.set("n", "<leader>uS", require("mini.starter").open, { desc = "Open mini starter" })
+
+-- ESC key to jj
+vim.keymap.set("i", "jj", "<ESC>", { silent = true })
+vim.keymap.set("i", "jk", "<ESC>", { silent = true })
