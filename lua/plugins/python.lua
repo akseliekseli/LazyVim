@@ -25,7 +25,10 @@ return {
     end,
     {
         "nvim-treesitter/nvim-treesitter",
-        opts = { ensure_installed = { "ninja", "rst" } },
+        opts = {
+            install_dir = vim.fn.stdpath("data") .. "/site",
+            ensure_installed = { "ninja", "rst" },
+        },
     },
     {
         "neovim/nvim-lspconfig",
